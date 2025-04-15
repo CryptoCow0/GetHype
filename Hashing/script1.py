@@ -1,5 +1,14 @@
 import hashlib
 import sys
+
+"""
+To replicate other hashes:
+    - change function to your specific hash
+    - write to file
+    - change functionality
+    - easy peasy
+    - scriptx with x being number the hash is in list
+"""
 def md5_hash(text: str) -> str:
     '''computes the md5_hash'''
     hash_object = hashlib.md5(text.encode())
