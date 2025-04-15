@@ -1,16 +1,18 @@
 import hashlib
 import sys
+import os
 
-def sha224_hash(text: str) -> str:
-    '''computes the SHA-224 hash'''
-    hash_object = hashlib.sha224(text.encode())
-    with open('./Cracking/script3.txt', 'a') as file:
+def blake2s_hash(text: str) -> str:
+    '''computes the BLAKE2s hash'''
+    hash_object = hashlib.blake2s(text.encode())
+    with open('./Cracking/script15.txt', 'a') as file:
         file.write(hash_object.hexdigest())
+
     return hash_object.hexdigest()
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         password = sys.argv[1]
-        print(sha224_hash(password))
+        print(blake2s_hash(password))
     else:
         print("Error: No input string provided.")
