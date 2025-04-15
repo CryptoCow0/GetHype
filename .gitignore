@@ -1,0 +1,5 @@
+#Ignore everything in the rockyou folder
+Cracking/rockyou/
+# Ignore all the scirpts results
+Cracking/script*.txt
+

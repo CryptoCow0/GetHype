@@ -1,13 +1,17 @@
 import subprocess
 
-# Example: Run hashcat with SHA256 mode (-m 1400) and a wordlist
-command = [
-    "hashcat", 
-    "-m", "1400",             # Hash type (SHA256)
-    "script1.txt",        # File containing the target hash
-    "rockyou.txt"
-]
+batch_script = r"C:\Users\Migue\Desktop\Spring 2025\Cryptography\GetHype\GetHype\Cracking\windowsisstupid.bat"
 
-result = subprocess.run(command, capture_output=True, text=True)
+# Run the batch script
+result = subprocess.run(
+    batch_script,
+    capture_output=True,
+    text=True,
+    shell=True
+)
+
+# Print output
+print("STDOUT:")
 print(result.stdout)
+print("STDERR:")
 print(result.stderr)

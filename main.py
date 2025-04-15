@@ -5,7 +5,8 @@ from typing import List
 
 # we will need to change this for loop 
 scripts = [f"./Hashing/script{i}.py" for i in range(1, 21)]
-input_str = input("Welcome to this educational tool intended on teaching you the security level of your password, please input the password you would like to try: ")
+# adding colors
+input_str = input("\033[32mWelcome to this educational tool intended on teaching you the \033[0 \033[31msecurity level\033[0m \033[32mof your password, please input the password you would like to try:\033[0m ")
 
 def run_script(script_name: str) -> str:
     result = subprocess.run(
