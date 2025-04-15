@@ -1,5 +1,6 @@
 import subprocess
 import concurrent.futures
+
 from typing import List
 
 
@@ -26,6 +27,7 @@ def main():
     
     for i, output in enumerate(results, 1):
         print(f"Output from script {i}.py: {output}")
+    
 
 if __name__ == "__main__":
     main()
