@@ -4,7 +4,7 @@ import subprocess
 command = [
     "hashcat", 
     "-m", "1400",             # Hash type (SHA256)
-    "target_hash.txt",        # File containing the target hash
+    "script1.txt",        # File containing the target hash
     "rockyou.txt"
 ]
 
