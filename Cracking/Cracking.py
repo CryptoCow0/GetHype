@@ -5,7 +5,7 @@ command = [
     "hashcat", 
     "-m", "1400",             # Hash type (SHA256)
     "target_hash.txt",        # File containing the target hash
-    "wordlist.txt"
+    "rockyou.txt"
 ]
 
 result = subprocess.run(command, capture_output=True, text=True)
