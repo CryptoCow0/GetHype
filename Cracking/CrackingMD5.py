@@ -14,8 +14,4 @@ result = subprocess.run(
 print("STDOUT:")
 print(result.stdout)
 print("STDERR:")
-<<<<<<< HEAD
 print(result.stderr)
-=======
-print(result.stderr)
->>>>>>> main
